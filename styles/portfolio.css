@@ -19,15 +19,16 @@ body {
     padding: 15px 35px;
     cursor: pointer;
 }
-.section-title{
-    color:#181818;
+
+.section-title {
+    color: #181818;
     text-align: center;
     font-size: 35px;
     font-weight: 700;
-
 }
-.section-description{
-    color:#757575;
+
+.section-description {
+    color: #757575;
     text-align: center;
     font-size: 18px;
 }
@@ -83,24 +84,23 @@ nav a:hover {
     background-image: url('../images/header_bg.png');
     background-repeat: no-repeat;
     background-position: bottom right;
-
-    
-    
 }
 
 /* Banner related styles */
 .banner {
-    padding: 30px 30px 0px 150px; /* Fixed extra spaces */
+    padding: 30px 100px 30px 100px; /* Balanced padding */
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Align image and text better */
+    justify-content: space-between;
 }
-.banner-content{
-    max-width:500px;
+
+.banner-content {
+    max-width: 500px;
 }
+
 .banner-profile {
-    width: 500px; /* Added 'px' for width */
-    height: auto; /* Keep the aspect ratio */
+    width: 500px;
+    height: auto;
 }
 
 .banner-greeting {
@@ -112,11 +112,11 @@ nav a:hover {
 .banner-heading {
     font-size: 45px;
     font-weight: 700;
-    margin-top: 5px ;
+    margin-top: 5px;
     margin-bottom: 20px;
-   
 }
-.banner-description{
+
+.banner-description {
     margin-top: 5px;
     margin: 20px;
 }
@@ -124,7 +124,7 @@ nav a:hover {
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .banner {
-        flex-direction: column; /* Stack text and image vertically on smaller screens */
+        flex-direction: column;
         padding: 20px;
     }
 
@@ -141,25 +141,71 @@ nav a:hover {
     .nav-title {
         font-size: 30px;
     }
+
+    .about {
+        padding: 30px;
+    }
+
+    #what-i-do-description {
+        padding: 20px;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
-.about{
-    padding:130px ;
+
+/* About section styles */
+.about {
+    padding: 130px;
     border-radius: 10px;
     background: #FFF8F3;
     margin: 130px 0;
-
 }
-main{
+
+main {
     max-width: 1140px;
     margin: 0 auto;
 }
-.about-info-container{
+
+.about-info-container {
     display: flex;
     justify-content: space-around;
 }
-.about-info{
+
+.about-info {
     text-align: center;
 }
-#what-i-do-description{
+
+#what-i-do-description {
     padding: 30px 150px;
+}
+
+/* Skills container styles */
+.skills-container {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Ensure the skills wrap on smaller screens */
+}
+
+.skill {
+    padding: 30px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+    text-align: center;
+    flex-basis: 32%; /* Ensure equal width for three items in a row */
+}
+
+.skill-description {
+    color: #757575;
+}
+/*--resume sections styles--*/
+.resume-column-title{
+    color: #474747;
+    font-size: 30px;
+    font-weight: 700;
+
 }
